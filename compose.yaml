@@ -19,7 +19,7 @@ services: # docker compose expects
             path: backend/requirements.txt
           - action: rebuild
             path: backend/Dockerfile
-          - action: sync
+          - action: restart
             path: backend/src/
             # target: /app
   static_html: # custom key name
